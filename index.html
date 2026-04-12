@@ -1,91 +1,87 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Graveaty Restaurant</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body {
-      margin:0;
-      font-family: Arial;
-      background:#0f172a;
-      color:#fff;
-    }
-    header {
-      background:url('https://images.unsplash.com/photo-1555396273-367ea4eb4db5');
-      background-size:cover;
-      padding:100px 20px;
-      text-align:center;
-    }
-    h1 {font-size:40px;}
-    .btn {
-      background:#f59e0b;
-      padding:12px 25px;
-      color:#000;
-      text-decoration:none;
-      border-radius:5px;
-    }
-    section {padding:30px;}
-    .card {
-      background:#1e293b;
-      padding:15px;
-      margin:10px;
-      border-radius:10px;
-    }
-    .grid {
-      display:flex;
-      flex-wrap:wrap;
-    }
-    .grid .card {
-      flex:1 1 45%;
-    }
-  </style>
-</head>
+section class="hero">
+  <div class="hero-content">
+    <h1>Modern Bhatti</h1>
+    <p class="location">Authentic Flavors of Machhapokhari</p>
+    <p class="subtitle">
+      Experience traditional Nepali cuisine with a modern twist.
+      Fresh ingredients, charcoal-grilled perfection.
+    </p>
 
-<body>
-
-<header>
-  <h1>Graveaty Restaurant</h1>
-  <p>Best Food Experience in Kathmandu</p>
-  <a class="btn" href="#menu">View Menu</a>
-</header>
-
-<section>
-  <h2>About</h2>
-  <p>Located in Vastu Boutique Hotel, we offer delicious meals, drinks, and a relaxing atmosphere.</p>
-</section>
-
-<section id="menu">
-  <h2>Menu</h2>
-  <div class="grid">
-    <div class="card">Momo</div>
-    <div class="card">Chowmein</div>
-    <div class="card">Thukpa</div>
-    <div class="card">Cocktails</div>
-    <div class="card">Soft Drinks</div>
+    <div class="hero-buttons">
+      <a href="#menu" class="btn-primary">View Menu</a>
+      <a href="#contact" class="btn-secondary">Contact Us</a>
+    </div>
   </div>
-</section>
+</section>.hero {
+  height: 100vh;
+  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.9)),
+              url('https://images.unsplash.com/photo-1604908176997-431f3b9c84b3');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  padding: 20px;
+}
 
-<section>
-  <h2>Gallery</h2>
-  <div class="grid">
-    <img src="https://images.unsplash.com/photo-1604908176997-125f25cc6f3d" width="100%">
-    <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c" width="100%">
+.hero h1 {
+  font-size: 42px;
+  color: #ff6b2c;
+  margin-bottom: 10px;
+}
+
+.location {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.subtitle {
+  margin: 15px 0;
+  font-size: 16px;
+  color: #ccc;
+}
+
+.hero-buttons {
+  margin-top: 20px;
+}
+
+.btn-primary {
+  background: #ff6b2c;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.btn-secondary {
+  border: 2px solid #ff6b2c;
+  color: #ff6b2c;
+  padding: 12px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+}<img src="https://images.unsplash.com/photo-1601050690597-df0568f70950" alt="Restaurant Food"><div class="menu-card">
+  <h3>Buff Sekuwa</h3>
+  <p>Juicy buffalo meat grilled with special spices</p>
+  <span>Rs. 450</span>
+</div>.menu-card {
+  transition: 0.3s;
+}
+
+.menu-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}<section class="trust">
+  <h2>Why Choose Us</h2>
+  <div class="features">
+    <div>⭐ 4.8 Rating</div>
+    <div>🔥 Fresh Ingredients</div>
+    <div>📍 Machhapokhari Location</div>
   </div>
-</section>
-
-<section>
-  <h2>Reviews</h2>
-  <div class="card">Great food and relaxing environment</div>
-  <div class="card">Loved the service and drinks</div>
-  <div class="card">Perfect place to hang out</div>
-</section>
-
-<section>
-  <h2>Contact</h2>
-  <p>📍 Chhusya Galli, Kathmandu</p>
-  <p>📞 01-5913958</p>
-  <p>🕒 8:00 AM – 11:30 PM</p>
-</section>
-
-</body>
-</html>
+</section><footer>
+  <p>📍 Machhapokhari, Kathmandu</p>
+  <p>📞 98XXXXXXXX</p>
+  <p>© 2026 Modern Bhatti</p>
+</footer>
